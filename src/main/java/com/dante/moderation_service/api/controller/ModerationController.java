@@ -22,8 +22,8 @@ public class ModerationController {
     private static final Logger logger = LoggerFactory.getLogger(ModerationController.class);
 
     @PostMapping
-    public ModerationOutput validComment(@RequestBody ModerationInput commentInput){
-        return validarComentario(commentInput);
+    public ModerationOutput validComment(@RequestBody ModerationInput moderationInput){
+        return validarComentario(moderationInput);
 
     }
 
